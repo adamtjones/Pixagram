@@ -1,0 +1,15 @@
+<main>
+
+<h1>Blogs</h1>
+<div>
+	<div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="pic in controller.pix" class="pixPosts">
+		
+		<a href="./home/{{pic._id}}"><img class="dallas" src="{{pic.url}}"></a><h2>{{pic.title}}</h2>
+		
+		<p>{{pic.description}}</p>
+		
+	</div>
+</div>
+</main>
+<!--<h3>Cool Title 1</h3>
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium..
