@@ -3,7 +3,6 @@
 <div class="admin">
 	<form ng-submit="controller.submit()" name="form">
 		<input class="m-b-20 form-control" type="text" placeholder="Title" ng-model="controller.form.title">
-		<!--from in class example, not sure what it is:<div text-angular ng-model="controller.form.description"></div>-->
 		<textarea class="m-b-20 form-control" type="textarea" placeholder="what's your photo about?" ng-model="controller.form.description"></textarea>
 		<textarea class="m-b-20 form-control" type="textarea" placeholder="url" ng-model="controller.form.url"></textarea>
 		<button type="submit" class="btn btn-primary" ng-click="controller.form.title = null">POST</button>

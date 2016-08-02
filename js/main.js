@@ -16,7 +16,7 @@
                     controllerAs: 'controller'
             })
             .state('detail', {
-                url: '/home/picid',
+                url: '/home/:picid',
                 templateUrl: '/partials/detail.html',
                 controller: 'detailController',
                 controllerAs: 'controller'

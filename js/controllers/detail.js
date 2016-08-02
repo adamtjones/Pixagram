@@ -9,7 +9,7 @@
        var singlePic = API.getSinglePic($stateParams.picid);
 
        singlePic.then(function(results){
-       	vm. = results.data;
+       	vm.pic = results.data;
        })
        });
 })();
