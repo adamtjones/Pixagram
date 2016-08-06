@@ -1,15 +1,16 @@
 <main>
-
-<h1>Blogs</h1>
 <div>
 	<div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="pic in controller.pix" class="pixPosts">
 		
 		<a href="#/home/{{pic._id}}"><img class="dallas" src="{{pic.url}}"></a><h2>{{pic.description}}</h2>
-		
+		<img ng-dblclick="mainController.postLikes(images)" ng-init="count=0" src="{{images.url}}">
+		<i class="fa fa-heart ng-hide" ng-show="images.show"></i>
+		<i class="fa fa-heart highlight ng-hide" ng-show="images.show"></i>
 		<p>{{pic.description}}</p>
-		
+	</div>
+	<div class="bar">
+		<i class="fa fa-gratipay" aria-hidden="true"></i><p>: {{images.likes | number}}</p>
+		<a href="#/detail/{{images._id}}"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
 	</div>
 </div>
 </main>
-<!--<h3>Cool Title 1</h3>
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium..

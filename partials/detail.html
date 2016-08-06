@@ -1,14 +1,12 @@
-<div>
-	<h3>detail.html page...it's working</h3>
 <div class="blog">
-
-<img class="dallas" src="{{controller.pic.url}}">
-<h2 ng-bind-html="controller.pic.title"></h2>		
-<p>{{controller.pic.title}}</p>
-<p>{{controller.pic.description}}</p>
-
-
-
-</div>
-
+	<img class="dallas" src="{{controller.pic.url}}">
+	<h2 ng-bind-html="controller.pic.title"></h2>
+	<p>{{controller.pic.title}}</p>
+	<p>{{controller.pic.description}}</p>
+	<img ng-dblclick="detail.postLikes(detail.data)" ng-init="count=0" src="{{detail.data.url}}">
+	<i class="fa fa-heart ng-hide" ng-show="detail.data.show"></i>
+	<i class="fa fa-heart highlight ng-hide" ng-show="detail.data.show"></i>
+	<div class="detLikes">
+		<i class="fa fa-gratipay" aria-hidden="true"></i>: {{detail.data.likes | number}}
+	</div>
 </div>

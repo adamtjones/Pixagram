@@ -46,10 +46,28 @@
 
                 return gettingData;
             }
+
+            var postLikes = function(id)
+            {
+                var data = {
+                    imageid: id,
+                }
+                var gettingData = $http({
+                    method: "POST",
+                    data: data,
+                    headers: {
+                        "X_CSRF_TOKEN" : "adam",
+                    },
+                    url: 'http://instagramcloneclass.herokuapp.com/images/vote',
+                });
+                return gettingData;
+            }
+
             return {
                 postPix,
                 getPix,
                 getSinglePic,
+                postLikes,
             }
         })
 })();

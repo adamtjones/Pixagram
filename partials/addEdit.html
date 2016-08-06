@@ -1,10 +1,9 @@
-<h2>Need to set up the POST API here. That way I can post images to the API array. When there are images/data there I can then pull it down for use elsewhere</h2>
 <h1 class="m-b-20">Admin</h1>
 <div class="admin">
 	<form ng-submit="controller.submit()" name="form">
 		<input class="m-b-20 form-control" type="text" placeholder="Title" ng-model="controller.form.title">
 		<textarea class="m-b-20 form-control" type="textarea" placeholder="what's your photo about?" ng-model="controller.form.description"></textarea>
 		<textarea class="m-b-20 form-control" type="textarea" placeholder="url" ng-model="controller.form.url"></textarea>
-		<button type="submit" class="btn btn-primary" ng-click="controller.form.title = null">POST</button>
+		<button type="submit" class="btn btn-primary" >POST</button>
 	</form>
 </div>
